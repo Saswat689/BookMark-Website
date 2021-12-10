@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@layer components {
+.btn {
+	@apply shadow-md py-3 px-6 rounded-md transition duration-300
+	}
+.btn-purple {
+	@apply bg-indigo-500 hover:bg-indigo-400 ring-transparent ring-4 focus:ring-sky-400 text-white
+} 
+.btn-white {
+	@apply bg-gray-100 hover:bg-gray-200 ring-transparent ring-4 focus:ring-gray-300 text-gray-700
+}
+.btn-red {
+	@apply bg-red-500 hover:bg-red-400 ring-transparent ring-4 focus:ring-red-400 text-white
+}
+.btn-orange {
+	@apply bg-orange-500 hover:bg-orange-400 ring-transparent ring-4 focus:ring-orange-400 text-white
+}
+.input {
+	@apply focus:outline-none flex-1 px-2 py-3 rounded-md text-gray-900 ring-transparent ring-4 focus:ring-sky-400 ring-offset-2 focus:shadow-lg
+}
+}
