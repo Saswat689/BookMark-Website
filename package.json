@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch & node server.js",
     "build:tailwindcss": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
-    "start": "node server.js"
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "",
