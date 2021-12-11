@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch & node server.js",
+    "start": "concurrently --kill-others \"npm run build:tailwindcss\" \"npm run server\"",
     "build:tailwindcss": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
     "server": "node server.js"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.4.0",
     "express": "^4.17.1",
     "tailwindcss": "^3.0.0"
   }
