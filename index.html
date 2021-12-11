@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bookmark Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style>
+		html {
+  			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+<body class="font-Poppins">
+	
+	<!-- sidenav -->
+	<aside class="fixed top-14 right-4 w-2 h-1/4">
+		<div class="text-gray-500 px-2 z-50 absolute top-0 right-0 border-r-2 border-gray-600 flex flex-col gap-12 items-center justify-center">
+			<a href="#features" ><i class="cursor-pointer fas fa-dot-circle"></i></a>
+			<a href="#download" ><i class="cursor-pointer fas fa-dot-circle"></i></a>
+			<a href="#faq" ><i class="cursor-pointer fas fa-dot-circle"></i></a>
+			<a href="#contact" ><i class="cursor-pointer fas fa-dot-circle"></i></a>
+		</div>
+	</aside>
+
+	<header>
+		<nav class="container flex items-center py-6 bg-gray-900 text-white sm:bg-transparent sm:text-black">
+			<div class="py-1">
+				<img src="/static/imgs/logo-bookmark.svg" alt="website logo" class="hidden sm:block">
+				<img src="/static/imgs/logo-bookmark-white.png" alt="website logo" class="block sm:hidden">
+			</div>
+			<ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
+				<a href="#features" class="cursor-pointer text-gray-500 font-bold hover:text-indigo-400 transition tracking-wider text-sm">FEATURES</a>
+				<a href="#download" class="cursor-pointer text-gray-500 font-bold hover:text-indigo-400 transition tracking-wider text-sm">DOWNLOAD</a>
+				<a href="#faq" class="cursor-pointer text-gray-500 font-bold hover:text-indigo-400 transition tracking-wider text-sm">FAQ</a>
+				<a href="#contact" class="cursor-pointer text-gray-500 font-bold hover:text-indigo-400 transition tracking-wider text-sm">CONTACT</a>
+				<button type="button" class="btn btn-red text-sm uppercase font-bold">Login</button>
+			</ul>
+			<div class="flex sm:hidden flex-1 justify-end text-2xl cursor-pointer">
+				<i class="fas fa-bars menu"></i>
+			</div>
+		</nav>
+		<!-- visible on mobile -->
+		<div class="bg-gray-900 text-white w-full h-full absolute top-14 -left-full z-50 py-20 menu-wrapper transition-all duration-500 ease-in-out">
+			<ul class="mx-auto flex flex-col justify-center items-center gap-12 text-bookmark-blue uppercase text-xs">
+				<a href="#features" class="cursor-pointer text-white font-bold hover:text-indigo-400 transition tracking-wider text-lg">FEATURES</a>
+				<a href="#download" class="cursor-pointer text-white font-bold hover:text-indigo-400 transition tracking-wider text-lg">DOWNLOAD</a>
+				<a href="#faq" class="cursor-pointer text-white font-bold hover:text-indigo-400 transition tracking-wider text-lg">FAQ</a>
+				<a href="#contact" class="cursor-pointer text-white font-bold hover:text-indigo-400 transition tracking-wider text-lg">CONTACT</a>
+			</ul>
+		</div>
+
+	</header>
+	<!-- hero -->
+	<section class="relative">
+		<div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14">
+			<div class="flex flex-1 flex-col items-center lg:items-start">
+				<h2 class="text-bookmark-blue text-4xl lg:text-5xl text-center lg:text-left mb-6 font-extrabold text-gray-600">A Simple BookMark Manager</h2>
+				<p class="text-gray-400 text-lg text-center lg:text-left mb-6 font-bold leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.</p>
+				<div class="flex justify-center flex-wrap gap-6">
+					<button type="button" class="btn btn-purple">Get it on Chrome</button>
+					<button type="button" class="btn btn-white">Get it on Firefox</button>
+				</div>
+			</div>
+			<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0">
+				<img src="/static/imgs/hero-bg.png" alt="hero-background" class="z-40 w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full z-10">
+				<div class="z-30 hidden md:block overflow-hidden bg-indigo-500 rounded-l-full absolute h-80 w-2/4 top-32 r-0 lg:-bottom-28 lg:-right-36"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- features -->
+	<section class="bg-bookmark-white py-20 mt-20 lg:mt-16 wow animate__animated animate__fadeInLeft" id="features">
+		<div class="sm:w-3/4 lg:w-6/12 mx-auto px-2">
+			<h1 class="text-3xl font-extrabold lg:text-5xl text-center text-[#9d039d]">Features</h1>
+			<p class="text-center font-bold text-gray-400 mt-4 text-xl leading-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+		</div>
+
+		<div class="relative mt-20 lg:mt-24">
+
+			<div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24 wow animate__animated animate__fadeInRight">
+				<div class="flex flex-1 justify-center mb-10 lg:mb-0">
+					<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full z-10" src="/static/imgs/illustration-features-tab-1.png" alt="bookmark feature illustration">
+				</div>
+				<div class="flex flex-1 flex-col items-center lg:items-start">
+					<h1 class="text-2xl font-extrabold lg:text-3xl text-center text-gray-700">BookMark in A Press</h1>
+					<p class="text-xl text-center font-bold text-gray-400 mt-4 lg:text-left sm:w-3/4 lg:w-full leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+					<button type="button" class="btn btn-purple mt-4">Get started quickly</button>
+				</div>
+			</div>
+
+			<div class="hidden lg:block overflow-hidden bg-indigo-500 rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+		</div>
+
+		<div class="relative mt-20 lg:mt-52">
+
+			<div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24 wow animate__animated animate__fadeInLeft">
+				<div class="flex flex-1 justify-center mb-10 lg:mb-0">
+					<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full z-10" src="/static/imgs/illustration-features-tab-2.png" alt="bookmark feature illustration">
+				</div>
+				<div class="flex flex-1 flex-col items-center lg:items-start">
+					<h1 class="text-2xl font-extrabold lg:text-3xl text-center text-gray-700">Intelligent Search</h1>
+					<p class="text-xl text-center font-bold text-gray-400 mt-4 lg:text-left sm:w-3/4 lg:w-full leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+					<button type="button" class="btn btn-purple mt-4">Let`s Explore</button>
+				</div>
+			</div>
+
+			<div class="hidden lg:block overflow-hidden bg-indigo-500 rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36"></div>
+		</div>
+
+		<div class="relative mt-20 lg:mt-52">
+
+			<div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24 wow animate__animated animate__fadeInRight">
+				<div class="flex flex-1 justify-center mb-10 lg:mb-0">
+					<img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full z-10" src="/static/imgs/illustration-features-tab-3.png" alt="bookmark feature illustration">
+				</div>
+				<div class="flex flex-1 flex-col items-center lg:items-start">
+					<h1 class="text-2xl font-extrabold lg:text-3xl text-center text-gray-700">Be more Productive</h1>
+					<p class="text-xl text-center font-bold text-gray-400 mt-4 lg:text-left sm:w-3/4 lg:w-full leading-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+					<button type="button" class="btn btn-purple mt-4">The No.1 formula</button>
+				</div>
+			</div>
+
+			<div class="hidden lg:block overflow-hidden bg-indigo-500 rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"></div>
+		</div>
+
+	</section>
+
+	<!-- download section -->
+	<section class="py-20 mt-20 wow animate__animated animate__fadeInLeft" id="download">
+		<div class="sm:w-3/4 lg:w-6/12 mx-auto px-2">
+			<h1 class="text-3xl font-extrabold lg:text-5xl text-center text-[#9d039d]">Download the Extension</h1>
+			<p class="text-center font-bold text-gray-400 mt-4 text-lg leading-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+		</div>
+		<div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+
+			<div class="flex flex-col rounded-md shadow-md">
+				<div class="p-6 flex flex-col items-center">
+					<img src="/static/imgs/logo-chrome.svg" alt="browser image">
+					<h3 class="mt-5 mb-2 text-gray-700 text-lg font-bold">Add to chrome</h3>
+					<p class="text-center font-bold text-gray-400 mt-4 text-lg leading-8">Quickly add & customize with chrome</p>
+				</div>
+				<hr class="border-gray-600 m-4 border-b-2 border-opacity-10">
+				<div class="flex p-3 pb-5">
+					<button type="button" class="flex-1 btn btn-purple">Install for chrome</button>
+				</div>
+			</div>
+
+			<div class="flex flex-col rounded-md shadow-md">
+				<div class="p-6 flex flex-col items-center">
+					<img src="/static/imgs/logo-firefox.svg" alt="browser image">
+					<h3 class="mt-5 mb-2 text-gray-700 text-lg font-bold">Add to Firefox</h3>
+					<p class="text-center font-bold text-gray-400 mt-4 text-lg leading-8">Quickly add & customize with firefox</p>
+				</div>
+				<hr class="border-gray-600 m-4 border-b-2 border-opacity-10">
+				<div class="flex p-3 pb-5">
+					<button type="button" class="flex-1 btn btn-orange">Install for firefox</button>
+				</div>
+			</div>
+
+			<div class="flex flex-col rounded-md shadow-md">
+				<div class="p-6 flex flex-col items-center">
+					<img src="/static/imgs/logo-opera.svg" alt="browser image">
+					<h3 class="mt-5 mb-2 text-gray-700 text-lg font-bold">Add to Opera</h3>
+					<p class="text-center font-bold text-gray-400 mt-4 text-lg leading-8">Quickly add & customize with opera</p>
+				</div>
+				<hr class="border-gray-600 m-4 border-b-2 border-opacity-10">
+				<div class="flex p-3 pb-5">
+					<button type="button" class="flex-1 btn btn-red">Install for opera</button>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- faq -->
+	<section class="bg-bookmark-white py-20 wow animate__animated animate__fadeInRight" id="faq">
+		<div class="container">
+			<div class="sm:w-3/4 lg:w-4/5 mx-auto px-2">
+				<h1 class="text-3xl font-extrabold lg:text-5xl text-center text-[#9d039d]">Frequently Asked Questions</h1>
+				<p class="text-center font-bold text-gray-400 mt-4 text-lg leading-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+			</div>
+			<div class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto">
+				<div class="flex items-center border-b-2 py-6 cursor-pointer">
+					<span class="flex-1 text-xl font-bold text-gray-600">What is a Bookmark?</span>
+					<i class="text-indigo-700 fas fa-chevron-down"></i>
+				</div>
+				<div class="flex items-center border-b-2 py-6 cursor-pointer">
+					<span class="text-xl font-bold text-gray-600 flex-1">How can i Bookmark?</span>
+					<i class="text-indigo-700 fas fa-chevron-down"></i>
+				</div>
+				<div class="flex items-center border-b-2 py-6 cursor-pointer">
+					<span class="text-xl font-bold text-gray-600 flex-1">Why not use a regular browser?</span>
+					<i class="text-indigo-700 fas fa-chevron-down"></i>
+				</div>
+				<button type="button" class="flex self-center btn btn-purple mt-12">More info</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact -->
+	<section class="bg-[#9d039d] text-white py-20 wow animate__animated animate__fadeInLeft" id="contact">
+		<div class="container">
+			<div class="sm:w-3/4 lg:w-2/4 mx-auto">
+				<p class="font-light uppercase text-center mb-8">35,000 have already joined</p>
+				<h1 class="text-3xl text-center font-bold">Stay up to date with what we're doing</h1>
+				<div class="flex flex-col sm:flex-row gap-6 mt-8">
+					<input type="text" name="contact" placeholder="Enter your email address" class="input" />
+					<button type="button" class="btn btn-purple">Get it on Chrome</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-gray-900 py-8">
+		<div class="container flex flex-col md:flex-row items-center">
+			<div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+				<img src="/static/imgs/logo-bookmark-white.png" alt="company-logo">
+				<ul class="flex text-white uppercase gap-12 text-xs">
+					<li class="cursor-pointer">Features</li>
+					<li class="cursor-pointer">Pricing</li>
+					<li class="cursor-pointer">Contact</li>
+				</ul>
+			</div>
+
+			<div class="flex gap-10 mt-12 md:mt-0">
+				<li><i class="text-white text-2xl hover:text-indigo-500 cursor-pointer transition fab fa-twitter"></i></li>
+				<li><i class="text-white text-2xl hover:text-indigo-500 cursor-pointer transition fab fa-facebook square"></i></li>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		//toggle nav
+		const menu = document.querySelector('.menu');
+		const menuWrapper = document.querySelector('.menu-wrapper');
+
+		menu.addEventListener('click',() => {
+			if(menu.classList.contains('fa-bars')) {
+				menu.classList.remove('fa-bars')
+				menu.classList.add('fa-times')
+				menuWrapper.style.left = 0;
+			} else {
+				menu.classList.add('fa-bars')
+				menu.classList.remove('fa-times')
+				menuWrapper.style.left = "-100%";
+			}
+		})
+	</script>
+
+	<script>
+        document.addEventListener("DOMContentLoaded",() => {
+        	new WOW().init(); 
+        })
+    </script>
+
+</body>
+</html>
